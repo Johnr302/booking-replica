@@ -1,0 +1,76 @@
+html {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+}
+.button-options-container {
+  justify-content: left;
+  width: 63.5%;
+}
+.button-options-container button {
+  border: none;
+  background-color: #003680;
+  color: white;
+  padding: 13px 16px;
+  font-size: 15px;
+  margin: auto 3px;
+}
+
+.button-options-container button:hover {
+  border: 1px solid white;
+  border-radius: 23px;
+}
+
+.circle {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: auto 5px;
+}
+
+#currency {
+  border: none;
+  background-color: #003680;
+  color: white;
+}
+header {
+  background-color: #003680;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+.inner-container h1 {
+  font-size: 20px;
+}
+.header-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 100%;
+}
+.header-container {
+  margin-left: 20px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.search-location {
+  margin-top: 0;
+  background-color: #003680;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.search-location h1 {
+  /* margin-top: -21.44px; */
+}
