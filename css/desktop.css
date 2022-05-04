@@ -2,9 +2,25 @@ html {
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, sans-serif;
 }
+
+.active {
+  border: 1px solid white !important;
+  border-radius: 23px;
+}
+
+a:visited {
+  color: #0071c2;
+}
+
+body {
+  margin: 0;
+}
+
 .button-options-container {
   justify-content: left;
-  width: 63.5%;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 20px;
 }
 .button-options-container button {
   border: none;
@@ -16,16 +32,48 @@ html {
 }
 
 .button-options-container button:hover {
-  border: 1px solid white;
+  background-color: #204a8c;
   border-radius: 23px;
 }
 
 .circle {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin: auto 5px;
+  height: 25px;
+  width: 25px;
+  margin: auto 17px;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
+.container section {
+  width: 100%;
+}
+
+#covidInfo {
+  border: 1px solid #c2c2c2;
+  max-width: 1100px;
+  border-radius: 2px;
+}
+
+#covidInfo a {
+  text-decoration: none;
+}
+
+#covidInfo h1 {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
 }
 
 #currency {
@@ -33,6 +81,190 @@ html {
   background-color: #003680;
   color: white;
 }
+
+#customerService {
+  background-color: #003680;
+  color: white;
+}
+
+.deals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.deals-button {
+  color: #0071c2;
+  background-color: white;
+  border: 1px solid #0071c2;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.deals h1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.deals img {
+  width: 90px;
+  height: 90px;
+  margin: 18px 18px 20px 18px;
+}
+
+.deals p {
+  font-size: 14px;
+}
+
+.deals section {
+  border: 1px solid #c2c2c2;
+  max-width: 530px;
+  padding: 0 0 10px 10px;
+  display: flex;
+  border-radius: 2px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 240px;
+  align-items: flex-start;
+}
+
+.card h2 {
+  font-size: 15px;
+  padding: 12px 0 0px 0;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  padding-top: 4px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.card img {
+  height: 170px;
+  width: 170px;
+}
+
+.city-property-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.explore-USA {
+  max-width: 1100px;
+}
+
+.explore-USA-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .button-options-container {
+  background-color: #00357f;
+}
+
+footer .container-1 {
+  width: 100%;
+  background-color: #00357f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container-1 button {
+  max-width: 1100px;
+}
+
+footer .container-1 .line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+footer .container-2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+footer .container-2 a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.extranet {
+  color: #1071c2;
+  border: none;
+  background: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+footer .container-2 ul {
+  padding-left: 0;
+}
+
+footer .container-2 li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+footer .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  height: 40px;
+}
+
+footer .logo-container {
+  width: 100%;
+  max-width: 984px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer p {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+#footerListProperty {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin: 15px;
+  background-color: #073580;
+}
+
+form {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  height: 60px;
+  flex-wrap: wrap;
+}
+
 header {
   background-color: #003680;
   color: white;
@@ -43,34 +275,199 @@ header {
 header a {
   color: white;
   text-decoration: none;
+  border: 1px solid white;
+  margin: auto 4px;
+  padding: 11px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 2px;
 }
+
+header .right-header-container {
+  display: flex;
+}
+
 .inner-container h1 {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
 }
 .header-container {
   display: flex;
   flex-grow: 1;
   align-items: center;
+  max-width: 1100px;
   width: 100%;
+  padding-top: 2px;
+  margin-top: 20px;
 }
-.header-container {
-  margin-left: 20px;
-}
+
 .inner-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.search-location {
+
+input[type="checkbox"] {
+  background-color: black;
+  border-color: #c2c2c2;
+}
+
+#LasVegas {
+  background: url(https://cf.bstatic.com/xdata/images/city/540x270/349717.webp?k=15138e712e1083b40d0c1164fad96f5adce36dbe3707fe483f516a555765e561&o=);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+#language {
+  background-image: url(https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png);
+  background-size: cover;
+  border: none;
+}
+
+#listProperty {
+  color: white;
+}
+
+#LosAngeles {
+  background: url(https://cf.bstatic.com/xdata/images/city/540x270/620034.webp?k=57be46c03c63ddade3e509013855574fe00e8b23e30dc19cd6cc232b4da7eb7e&o=);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.location {
+  width: 355px;
+  height: 270px;
+}
+
+.location-container {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  color: white;
+}
+
+.location-text-container {
+  padding-left: 16px;
+}
+
+.location-text-container h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.location-text-container p {
+  font-size: 16px;
+  line-height: 1px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.major-location {
+  color: white;
+  height: 285px;
+  width: 540px;
+}
+
+.major-location-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#PalmSprings {
+  background: url(https://cf.bstatic.com/xdata/images/city/540x270/689354.webp?k=bbdffcc102bbeceb3f36d5c55bf031fcaa67314ab1ce88be019496fc9c03facd&o=);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#SanDiego {
+  background: url(https://cf.bstatic.com/xdata/images/city/540x270/689373.webp?k=653f4e64198a8728a4ca792a53cc44103b1c1ab8ab3a0328033fb253383ea13e&o=);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#SanFrancisco {
+  background: url(https://cf.bstatic.com/xdata/images/city/540x270/689394.webp?k=23b0050a839e18850cc6b64186787bdd846385ae280f2bdff2ced0a438f72112&o=);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.search {
+  background-color: #0071c2;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+}
+
+.search-form-item {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  flex-grow: 1;
+  font-size: 15px;
+  margin: 3px;
+  border: none;
+  border-radius: 2px;
+  padding: 0px 20px;
+}
+
+.search-location-text-container {
   margin-top: 0;
   background-color: #003680;
   color: white;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 10px;
 }
-.search-location h1 {
-  /* margin-top: -21.44px; */
+
+.search-location-text-container h1 {
+  font-size: 47px;
+  font-weight: 700;
+  margin: 80px 0 0;
+  letter-spacing: 2px;
+}
+.search-location-text-container p {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+.search-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003680;
+}
+
+.search-location form {
+  background-color: #febb02;
+  padding: 2px;
+  margin-bottom: -30px;
+  border-radius: 2px;
+}
+
+.travel-for-work {
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  margin-top: 3px;
+}
+
+.underline-white {
+  border: none;
+  text-decoration: underline;
+  background-color: #00357f;
+  color: white;
+  font-weight: 600;
+}
+
+.white-BG {
+  background-color: white;
+  color: #003680;
+  border-color: #003680;
+  font-size: 13px;
 }
